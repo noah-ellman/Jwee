@@ -39,14 +39,14 @@ str
 			  
 	wee.event.onReady( function() {
 		wee.evalStyle(
-			'#weeConsole { position:absolute; z-index:99205; top:-60px; left:0px; border:1px solid #555; width:98%; background:#009933; padding:2px 0px 2px 0px; text-align:left; overflow:hidden;  }'
-			+'#weeConsoleInput { background: #FFF !important; font-size:17px; line-height:20px; color:#114477; border:1px solid #005522;  width:95%;  height:auto; margin:0px; outline:none; text-align:left  font-weight:bold; font-family:"Arial"; text-align:left; }'
-			+'#weeTrace { position:absolute; top:90px; left:-700px; padding:5px; z-index:99201; height:auto; overflow:hidden; text-align:left; font-size:12px; line-height:13px; white-space:normal; background-color:white; color:#444; border:2px solid #555; border-left:0; width:500px; font-family:Calibri,Arial; }' 	
+			'#weeConsole { position:absolute; z-index:99205; top:-60px; left:0px; width:100%; background:#AAAAA;text-align:left; overflow: hidden; height:38px;'
+			+'#weeConsoleInput { background: #FFFFFF !important; font-size:18px; line-height:22px; color:#114477; border:1px solid #005522;  width:500px;  height:auto; margin:0px; outline:none; text-align:left  font-weight:bold; font-family:"Arial"; text-align:left; }'
+			+'#weeTrace { position:absolute; top:40px; left:-700px; padding:5px; z-index:99201; height:auto; overflow:hidden; text-align:left; font-size:12px; line-height:13px; white-space:normal; background-color:white; color:#444; border:2px solid #555; border-left:0; width:500px; font-family:Calibri,Arial; }' 	
 			+'#weeTrace b { color: blue; }'			
 			+'#weeTrace i { color: green; font-weight:bold; }'						
 			+'#weeTrace i b, #weeTrace b i { color: yellow; }'									
 			+'#weeTrace small { color: #AAA; font-size:10px; }'												
-			+'#weeInspect { position:absolute; background:#111; color:#F60; top:25px; left:-600px; z-index:11202; height:auto; overflow:auto; text-align:left; font-weight:normal; font-size:12px; line-height:13px; white-space:normal; padding:5px; border:2px solid #777;  width:450px; min-height:400px; max-height:500px; overflow:auto; overflow-x:hidden !important;  }'
+			+'#weeInspect { position:absolute; background:#111; color:#F60; top:40px; left:-600px; z-index:11202; height:auto; overflow:auto; text-align:left; font-weight:normal; font-size:12px; line-height:13px; white-space:normal; padding:5px; border:2px solid #777;  width:450px; min-height:400px; max-height:500px; overflow:auto; overflow-x:hidden !important;  }'
 			+'#weeInspect div { margin:5px; padding:5px; color:#BBBBBB; font-size:11px; line-height:12px; }'
 			+'#weeInspect br { clear:both; }'
 			+'#weeInspect var { float:right; text-align:right; color:#939; font-weight:normal; font-size:11px; font-style:normal; font-family:Calibri,Arial; }'

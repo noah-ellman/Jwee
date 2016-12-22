@@ -25,7 +25,7 @@
 wee.cfg.TWEEN_FRAME_RATE = wee.ua.chrome ? 50 : (wee.ua.firefox ? 35 : (wee.ua.ie > 8 ? 50 : 60));
 wee.cfg.DEFAULT_EASE_EQUATION = 'easeBoth';
 wee.cfg.BLACKOUT_WITH_FADE = true;
-wee.cfg.BLACKOUT_OPACITY = 75;
+wee.cfg.BLACKOUT_OPACITY = 50;
 ///////////////////////////////////////////////////
 var FX = wee.fx = {};
 ///////////////////////////////////////////////////
@@ -510,7 +510,7 @@ FX.Tween.defaults = { duration: 1, ease: FX.easing.easeDefault }
 				this.running = true;
 				if( typeof color == 'string' ) this.color = color;
 				color = this.color;
-				var ele = wee('__blackout'), h = Dom.clientHeight()+200, t = wee.dom.scrollTop()-100;
+				var ele = wee('__blackout'), h = Dom.clientHeight()+100, t = wee.dom.scrollTop()-100;
 				ele = wee.elem.create('div#__blackout','position:absolute;z-index:999;top:' + t + 'px;left:0px;width:100%;height:'+h+'px;margin:0;padding:0;display:block;background-color:'+color+';');
 				b.appendChild(ele);
 				if( this.ANIMATE ) {

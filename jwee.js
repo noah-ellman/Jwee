@@ -353,6 +353,7 @@ Object.toString =
 					//}
 					if( obj.className ) str = '[object [prototype ' + obj.className + ']]'; 
 					else if( !members.length && ('bind' in obj) ) { str = '[object Function]'; }
+					if( typeof obj['__proto__'] != 'undefined' )  str = '*' + str;
 					if( done ) return str;
 					else if( members.length ) return str + '{\r\n' + members.map( function(k) { return k + ': ' + Object.toString(obj[k],true); } ).join(', \r\n') + ' }';
 					return str;
